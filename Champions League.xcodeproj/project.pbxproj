@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		937114542C31BF0B004927F2 /* Champions_LeagueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937114532C31BF0B004927F2 /* Champions_LeagueApp.swift */; };
-		937114562C31BF0B004927F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937114552C31BF0B004927F2 /* ContentView.swift */; };
 		937114582C31BF0C004927F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937114572C31BF0C004927F2 /* Assets.xcassets */; };
 		9371145B2C31BF0C004927F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9371145A2C31BF0C004927F2 /* Preview Assets.xcassets */; };
-		9371145D2C31BF0C004927F2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371145C2C31BF0C004927F2 /* Persistence.swift */; };
-		937114602C31BF0C004927F2 /* Champions_League.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9371145E2C31BF0C004927F2 /* Champions_League.xcdatamodeld */; };
+		937114672C31BF52004927F2 /* LeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937114662C31BF52004927F2 /* LeagueView.swift */; };
+		937114692C31BF5C004927F2 /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937114682C31BF5C004927F2 /* LeagueViewModel.swift */; };
+		9371146B2C31BF6D004927F2 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371146A2C31BF6D004927F2 /* Team.swift */; };
+		9371146D2C320E0B004927F2 /* EditMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371146C2C320E0B004927F2 /* EditMatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		937114502C31BF0B004927F2 /* Champions League.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Champions League.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		937114532C31BF0B004927F2 /* Champions_LeagueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champions_LeagueApp.swift; sourceTree = "<group>"; };
-		937114552C31BF0B004927F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		937114572C31BF0C004927F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9371145A2C31BF0C004927F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9371145C2C31BF0C004927F2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		9371145F2C31BF0C004927F2 /* Champions_League.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Champions_League.xcdatamodel; sourceTree = "<group>"; };
+		937114662C31BF52004927F2 /* LeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueView.swift; sourceTree = "<group>"; };
+		937114682C31BF5C004927F2 /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
+		9371146A2C31BF6D004927F2 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		9371146C2C320E0B004927F2 /* EditMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				937114532C31BF0B004927F2 /* Champions_LeagueApp.swift */,
-				937114552C31BF0B004927F2 /* ContentView.swift */,
+				9371146E2C321147004927F2 /* Model */,
+				9371146F2C321154004927F2 /* View */,
+				937114702C321164004927F2 /* ViewModel */,
 				937114572C31BF0C004927F2 /* Assets.xcassets */,
-				9371145C2C31BF0C004927F2 /* Persistence.swift */,
-				9371145E2C31BF0C004927F2 /* Champions_League.xcdatamodeld */,
 				937114592C31BF0C004927F2 /* Preview Content */,
 			);
 			path = "Champions League";
@@ -71,6 +73,31 @@
 				9371145A2C31BF0C004927F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9371146E2C321147004927F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9371146A2C31BF6D004927F2 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9371146F2C321154004927F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				937114662C31BF52004927F2 /* LeagueView.swift */,
+				9371146C2C320E0B004927F2 /* EditMatchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		937114702C321164004927F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				937114682C31BF5C004927F2 /* LeagueViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9371145D2C31BF0C004927F2 /* Persistence.swift in Sources */,
-				937114602C31BF0C004927F2 /* Champions_League.xcdatamodeld in Sources */,
-				937114562C31BF0B004927F2 /* ContentView.swift in Sources */,
+				9371146B2C31BF6D004927F2 /* Team.swift in Sources */,
+				937114672C31BF52004927F2 /* LeagueView.swift in Sources */,
+				9371146D2C320E0B004927F2 /* EditMatchView.swift in Sources */,
 				937114542C31BF0B004927F2 /* Champions_LeagueApp.swift in Sources */,
+				937114692C31BF5C004927F2 /* LeagueViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,19 +380,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9371145E2C31BF0C004927F2 /* Champions_League.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9371145F2C31BF0C004927F2 /* Champions_League.xcdatamodel */,
-			);
-			currentVersion = 9371145F2C31BF0C004927F2 /* Champions_League.xcdatamodel */;
-			path = Champions_League.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 937114482C31BF0B004927F2 /* Project object */;
 }
